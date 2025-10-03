@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="{% static 'result.css' %}">
+</head>
+<body>
+    <h1>Your Score: {{ score }} / {{ total }}</h1>
+    <h3> << <a href="{% url 'first_page:welcome'%}">DashBorad</a></h3>
+    <ul>
+        {% for q, selected, correct, is_correct in results %}
+            <li>
+                <strong>{{ q }}</strong><br>
+                Your answer: {{ selected }}<br>
+                Correct answer: {{ correct }}<br>
+                {% if is_correct %}
+                    ✅ Correct
+                {% else %}
+                    ❌ Incorrect
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+     <h3> << <a href="{% url 'first_page:welcome'%}">DashBorad</a></h3>
+</body>
+</html>

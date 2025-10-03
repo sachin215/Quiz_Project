@@ -1,0 +1,71 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 40px;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Quiz container */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Question block */
+form div {
+    margin-bottom: 20px;
+}
+
+/* Question text */
+form p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Radio buttons and labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Divider between questions */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Submit button */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
